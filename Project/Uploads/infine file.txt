@@ -1,0 +1,559 @@
+
+1. What is a Loop?
+
+A loop repeats a block of code multiple times.
+
+Types of Loops in C/Java
+for
+while
+do while
+2. for Loop
+Syntax
+for(initialization; condition; increment)
+{
+    // code
+}
+
+Example
+for(int i=1;i<=5;i++)
+{
+    printf("%d",i);
+}
+
+
+
+3. while Loop
+Syntax
+while(condition)
+{
+   // code
+}
+
+
+Example
+int i=1;
+
+while(i<=5)
+{
+   printf("%d",i);
+   i++;
+}
+
+
+4. do while Loop
+Syntax
+do
+{
+   // code
+}while(condition);
+Example
+int i=1;
+
+do{
+   printf("%d",i);
+   i++;
+}while(i<=5);
+Difference Between Loops
+Loop	Condition Check	Executes Minimum
+for	Beginning	0 times
+while	Beginning	0 times
+do while	End	1 time
+5. Nested Loop
+
+Loop inside another loop.
+
+Example
+for(int i=1;i<=3;i++)
+{
+   for(int j=1;j<=3;j++)
+   {
+      printf("* ");
+   }
+   printf("\n");
+}
+
+
+
+6. Infinite Loop
+
+Condition never becomes false.
+
+Example
+while(1)
+{
+   printf("Hello");
+}
+
+
+
+7. break Statement
+
+Stops loop immediately.
+
+Example
+for(int i=1;i<=5;i++)
+{
+   if(i==3)
+      break;
+
+   printf("%d",i);
+}
+
+
+
+8. continue Statement
+
+Skips current iteration.
+
+Example
+for(int i=1;i<=5;i++)
+{
+   if(i==3)
+      continue;
+
+   printf("%d",i);
+}
+
+
+
+
+
+Big-O Notation
+
+Common Time Complexities
+Complexity	Meaning
+O(1)	Constant
+O(log n)	Logarithmic
+O(n)	Linear
+O(n log n)	Efficient sorting
+O(n²)	Nested loop
+O(2ⁿ)	Exponential
+9. O(1) – Constant Time
+
+Execution time never changes.
+
+Example
+int a=10;
+printf("%d",a);
+
+
+
+10. O(n) – Linear Time
+
+Single loop.
+
+Example
+for(int i=0;i<n;i++)
+{
+   printf("%d",i);
+}
+
+
+
+11. O(n²) – Quadratic Time
+
+Nested loops.
+
+Example
+for(int i=0;i<n;i++)
+{
+   for(int j=0;j<n;j++)
+   {
+      printf("*");
+   }
+}
+
+
+
+12. O(log n) – Logarithmic
+
+Problem size halves each step.
+
+Binary Search Example
+while(low<=high)
+{
+   mid=(low+high)/2;
+
+   if(arr[mid]==key)
+      break;
+}
+
+
+13. O(n log n)
+
+Used in:
+
+Merge Sort
+Quick Sort
+
+Efficient sorting algorithms.
+
+14. Time Complexity Examples
+Code	Complexity
+Single statement	O(1)
+One loop	O(n)
+Two nested loops	O(n²)
+Loop dividing by 2	O(log n)
+
+
+
+
+Q1
+for(i=0;i<n;i++)
+
+Complexity?
+
+
+
+Q2
+for(i=0;i<n;i++)
+   for(j=0;j<n;j++)
+
+
+Q3
+while(n>1)
+{
+   n=n/2;
+}
+
+
+
+
+
+1. Multiplication Table
+for(int i=1;i<=10;i++)
+{
+   printf("%d\n",5*i);
+}
+
+
+
+2. Factorial
+int fact=1;
+
+for(int i=1;i<=5;i++)
+{
+   fact=fact*i;
+}
+
+
+
+3. Fibonacci
+int a=0,b=1,c;
+
+for(int i=1;i<=5;i++)
+{
+   c=a+b;
+   printf("%d ",c);
+
+   a=b;
+   b=c;
+}
+
+
+One loop	O(n)
+Nested loop	O(n²)
+Divide by 2	O(log n)
+Loop + nested loop	O(n²)
+Important Tip
+
+I
+Which loop executes at least once?
+
+A) for
+B) while
+C) do while
+D) nested loop
+
+
+Q2
+
+Which loop is best when number of iterations is known?
+
+A) while
+B) do while
+C) for
+D) switch
+
+Q3
+
+Output?
+
+for(int i=1;i<=3;i++)
+{
+   printf("%d ",i);
+}
+
+A) 1 2
+B) 1 2 3
+C) 0 1 2
+D) Error
+
+
+
+Q4
+
+What is an infinite loop?
+
+A) Executes once
+B) Never executes
+C) Runs forever
+D) Syntax error
+
+
+Q5
+
+Which statement skips current iteration?
+
+A) break
+B) continue
+C) return
+D) exit
+
+
+
+Q6
+
+Which statement terminates loop immediately?
+
+A) stop
+B) continue
+C) break
+D) skip
+
+
+
+Q7
+
+Output?
+
+int i=1;
+
+while(i<=3)
+{
+   printf("%d ",i);
+   i++;
+}
+
+A) 1 2 3
+B) 0 1 2
+C) 1 2
+D) Error
+
+
+Q8
+
+Output?
+
+for(int i=0;i<5;i++)
+{
+   if(i==3)
+      break;
+
+   printf("%d ",i);
+}
+
+A) 0 1 2
+B) 0 1 2 3
+C) 1 2 3
+D) 0 1 2 4
+
+
+Q9
+
+Output?
+
+for(int i=1;i<=5;i++)
+{
+   if(i==3)
+      continue;
+
+   printf("%d ",i);
+}
+
+A) 1 2 3 4 5
+B) 1 2 4 5
+C) 1 2 3
+D) 4 5
+
+
+
+Q10
+
+Nested loops are commonly used for?
+
+A) Conditions only
+B) Pattern programs
+C) Variable declaration
+D) Function call
+
+
+Big-O Notation MCQ
+Q11
+
+What does Big-O notation measure?
+
+A) Variable size
+B) Program color
+C) Algorithm efficiency
+D) Database size
+
+
+Q12
+
+Time complexity of single loop?
+
+for(i=0;i<n;i++)
+
+A) O(1)
+B) O(log n)
+C) O(n)
+D) O(n²)
+
+
+
+Q13
+
+Complexity of nested loop?
+
+for(i=0;i<n;i++)
+{
+   for(j=0;j<n;j++)
+
+A) O(1)
+B) O(n)
+C) O(log n)
+D) O(n²)
+
+
+Q14
+
+Complexity of binary search?
+
+A) O(n²)
+B) O(log n)
+C) O(n)
+D) O(1)
+
+
+Q15
+
+Which complexity is fastest?
+
+A) O(n²)
+B) O(n)
+C) O(log n)
+D) O(1)
+
+
+
+Q16
+
+Which sorting algorithm commonly has O(n log n)?
+
+A) Bubble Sort
+B) Merge Sort
+C) Linear Search
+D) Selection Sort
+
+
+Q17
+
+Output complexity?
+
+while(n>1)
+{
+   n=n/2;
+}
+
+A) O(n)
+B) O(log n)
+C) O(n²)
+D) O(1)
+
+
+
+Q18
+
+Which complexity grows slowest?
+
+A) O(n²)
+B) O(n)
+C) O(log n)
+D) O(2ⁿ)
+
+
+Q19
+
+Which complexity is worst for large input?
+
+A) O(1)
+B) O(log n)
+C) O(n)
+D) O(2ⁿ)
+
+
+Q20
+
+Time complexity for accessing array element?
+
+
+
+A) O(1)
+B) O(n)
+C) O(log n)
+D) O(n²)
+
+
+Scenario-Based MCQ
+Q21
+
+Best approach to reduce execution time?
+
+A) Increase nested loops
+B) Use efficient algorithm
+C) Add delays
+D) Duplicate code
+
+
+Q22
+
+Why avoid unnecessary nested loops?
+
+A) Increases readability
+B) Reduces complexity
+C) Increases time complexity
+D) Avoids variables
+
+
+
+Q23
+
+Which loop is preferred for array traversal?
+
+A) switch
+B) for
+C) goto
+D) break
+
+Q24
+
+What happens if loop condition is always true?
+
+A) Compilation error
+B) Infinite loop
+C) Loop skipped
+D) Runtime crash always
+
+
+
+Q25
+
+Which is best complexity among these?
+
+A) O(n²)
+B) O(n log n)
+C) O(n)
+D) O(1)
+
+

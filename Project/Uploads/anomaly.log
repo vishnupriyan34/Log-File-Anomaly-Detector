@@ -1,0 +1,6 @@
+INFO User login successful
+INFO Database connected
+WARNING Multiple failed login attempts
+ERROR Database connection failed
+CRITICAL Unauthorized access detected
+ERROR Server overload
