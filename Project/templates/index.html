@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Log File Anomaly Explainer</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="background-animation">
+
+        <span style="left:10%">⚙️</span>
+        <span style="left:20%">💻</span>
+        <span style="left:35%">🛡️</span>
+        <span style="left:50%">☁️</span>
+        <span style="left:65%">📡</span>
+        <span style="left:80%">🖥️</span>
+        <span style="left:90%">🔒</span>
+
+    </div>
+
+    <div class="container">
+
+        <h1>🔍 Log File Anomaly Explainer</h1>
+
+        <h3>AI Powered Cyber Security Dashboard</h3>
+
+        <p>
+            Upload your system log files and identify suspicious activities,
+            security threats, errors and anomalies instantly.
+        </p>
+
+        <form action="/upload" method="post" enctype="multipart/form-data">
+
+            <input type="file" name="logfile">
+
+            <br><br>
+
+            <button type="submit">
+                Analyze Log File
+            </button>
+
+        </form>
+
+        <br>
+
+        <p style="font-size:14px;color:#ccefff;">
+            Developed by Sivapriyan | Infinite Computer Solutions Project
+        </p>
+
+    </div>
+
+</body>
+
+</html>

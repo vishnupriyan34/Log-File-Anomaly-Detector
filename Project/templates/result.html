@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Analysis Result</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="background-animation">
+
+        <span style="left:10%">⚙️</span>
+        <span style="left:20%">💻</span>
+        <span style="left:35%">🛡️</span>
+        <span style="left:50%">☁️</span>
+        <span style="left:65%">📡</span>
+        <span style="left:80%">🖥️</span>
+        <span style="left:90%">🔒</span>
+
+    </div>
+
+    <div class="container">
+
+        <h1>📊 Analysis Result</h1>
+
+        <h3>Total Logs: {{ total_logs }}</h3>
+
+        <h3>Anomalies Found: {{ anomaly_count }}</h3>
+
+        <br>
+
+        {% for item in anomalies %}
+
+        <div class="result-card">
+
+            <h3>{{ item.log }}</h3>
+
+            <div class="severity">
+                Severity: {{ item.severity }}
+            </div>
+
+            <p>
+                <strong>AI Explanation:</strong>
+            </p>
+
+            <p>
+                {{ item.explanation }}
+            </p>
+
+        </div>
+
+        {% endfor %}
+
+        <br>
+
+        <a href="/">
+            <button>
+                Analyze Another File
+            </button>
+        </a>
+
+    </div>
+
+</body>
+
+</html>
