@@ -52,22 +52,29 @@ python src/detector.py --watch /var/logs/ --interval 30
 python src/detector.py --file app.log --report --output data/output/
 
 🔍 How It Works
+
 📥 Input Log File
       │
       ▼
+
 🔎 Log Parser  →  Extracts timestamps, levels, messages
       │
       ▼
+
 🧹 Preprocessor  →  Cleans & structures the data
       │
       ▼
+
 🤖 ML Model  →  Isolation Forest / Statistical Analysis
       │
       ▼
+
 🚨 Anomaly Classifier  →  Critical / Warning / Info
       │
       ▼
+
 📊 Report Generator  →  Visual summary + alerts
+
 
 📊 Sample Output
 [2025-01-15 14:32:01] 🔴 CRITICAL — Unusual spike: 847 errors in 60s (threshold: 50)
