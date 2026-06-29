@@ -34,11 +34,6 @@ log-anomaly-detector/
 ├── 📄 config.yaml
 └── 📄 README.md
 
-⚙️ Installation
-bash# 1️⃣ Clone the repository
-git clone https://github.com/vishnupriyan34/log-anomaly-detector.git
-cd log-anomaly-detector
-
 # 2️⃣ Create a virtual environment
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
