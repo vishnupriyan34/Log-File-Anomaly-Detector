@@ -89,4 +89,6 @@ python src/detector.py --file app.log --report --output data/output/
 
 👨‍💻 Author
 Vishnu Priyan S
-🎓 B.Tech Information Technology — V.S.B College of Engineering Technical Campushttps://vishnupriyan34.github.io/Demo-video---Infinite-/
+🎓 B.Tech Information Technology — V.S.B College of Engineering Technical Campus
+Demo Video
+https://vishnupriyan34.github.io/Demo-video---Infinite-/
