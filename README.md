@@ -2,11 +2,25 @@
 
 > 🔍 An intelligent log analysis tool that automatically detects **anomalies, errors, unusual patterns, and suspicious activities** in system log files using Python and Machine Learning.
 
-🎥 **Demo Video:** [View Project Demo](https://vishnupriyan34.github.io/Demo-video---Infinite-/)
+🌐 **Live Project:**
+https://log-file-anomaly-detector-v2s2.onrender.com/
+
+🎥 **Demo Video:**
+https://vishnupriyan34.github.io/Demo-video---Infinite/
 
 ---
 
-## 📌 About
+# 🚀 Live Demo
+
+## 🌐 Try the Application
+
+👉 **https://log-file-anomaly-detector-v2s2.onrender.com/**
+
+The deployed application allows users to interact with the Log File Anomaly Detector and explore its anomaly detection and log analysis capabilities.
+
+---
+
+# 📌 About
 
 **Log File Anomaly Detector** is a Python-based log analysis system designed to identify unusual behavior and potential issues from system and application log files.
 
@@ -16,7 +30,7 @@ It can be used for analyzing both **historical log files** and continuously moni
 
 ---
 
-## ✨ Features
+# ✨ Features
 
 * 🧠 **Smart Anomaly Detection** — Identifies unusual patterns, spikes, and outliers in log data
 * ⚡ **Real-Time Monitoring** — Continuously monitors log files for new entries
@@ -25,7 +39,7 @@ It can be used for analyzing both **historical log files** and continuously moni
 * 📁 **Multi-Format Support** — Supports `.log`, `.txt`, and custom log formats
 * 🔔 **Alert System** — Generates alerts when anomaly thresholds are exceeded
 * 🗂️ **Batch Processing** — Processes multiple historical log files
-* 🤖 **Machine Learning Detection** — Uses anomaly detection algorithms for identifying unusual behavior
+* 🤖 **Machine Learning Detection** — Uses anomaly detection algorithms to identify unusual behavior
 * 🧪 **Testing Support** — Includes unit tests for core detection functionality
 
 ---
@@ -40,6 +54,37 @@ It can be used for analyzing both **historical log files** and continuously moni
 | 📈 Matplotlib   | Data visualization and report generation |
 | 🗃️ MySQL       | Storing anomaly records                  |
 | 🔗 Git & GitHub | Version control and project management   |
+| 🚀 Render       | Application deployment                   |
+
+---
+
+# 🏗️ System Architecture
+
+```text
+                    📄 Log Files
+                         │
+                         ▼
+                  🔎 Log Parser
+                         │
+                         ▼
+                  🧹 Preprocessor
+                         │
+                         ▼
+               📊 Feature Extraction
+                         │
+                         ▼
+                🤖 ML / Rule Engine
+                         │
+                         ▼
+                🚨 Anomaly Detection
+                         │
+                         ▼
+               🔴 Severity Classification
+                         │
+                    ┌────┴────┐
+                    ▼         ▼
+              📊 Reports    🔔 Alerts
+```
 
 ---
 
@@ -99,14 +144,14 @@ cd log-anomaly-detector
 
 ## 3️⃣ Create a Virtual Environment
 
-### Windows
+### 🪟 Windows
 
 ```bash
 python -m venv venv
 venv\Scripts\activate
 ```
 
-### Linux / macOS
+### 🐧 Linux / macOS
 
 ```bash
 python -m venv venv
@@ -209,7 +254,7 @@ Raw log entries are cleaned and converted into a structured format suitable for 
 
 Machine Learning and statistical techniques are applied to identify unusual behavior.
 
-The project can use approaches such as:
+Possible approaches include:
 
 * **Isolation Forest**
 * Statistical threshold analysis
@@ -269,21 +314,21 @@ Downtime: 2.3s
 # 📊 Project Workflow
 
 ```text
-Log Files
-    ↓
-Log Parsing
-    ↓
-Data Cleaning
-    ↓
-Feature Extraction
-    ↓
-Anomaly Detection
-    ↓
-Severity Classification
-    ↓
-Visualization
-    ↓
-Alerts & Reports
+📄 Log Files
+     ↓
+🔎 Log Parsing
+     ↓
+🧹 Data Cleaning
+     ↓
+📊 Feature Extraction
+     ↓
+🤖 Anomaly Detection
+     ↓
+🚨 Severity Classification
+     ↓
+📈 Visualization
+     ↓
+🔔 Alerts & Reports
 ```
 
 ---
@@ -315,18 +360,50 @@ pytest
 
 ---
 
-# 🚀 Future Enhancements
+# 🚀 Deployment
 
-Potential improvements for the project include:
+The application is deployed using **Render**.
+
+### 🌐 Production Application
+
+👉 https://log-file-anomaly-detector-v2s2.onrender.com/
+
+### 🔄 Deployment Workflow
+
+```text
+💻 Local Development
+        ↓
+🐙 GitHub Repository
+        ↓
+🚀 Render Deployment
+        ↓
+🌐 Live Application
+```
+
+---
+
+# 🎥 Project Demo
+
+A demonstration video is available showing the project's workflow and major functionality.
+
+🎬 **Watch Demo:**
+https://vishnupriyan34.github.io/Demo-video---Infinite-/
+
+---
+
+# 🔮 Future Enhancements
+
+Potential improvements include:
 
 * 🌐 Web-based monitoring dashboard
 * 🔔 Email and SMS notifications
-* 🤖 Advanced ML models
+* 🤖 Advanced Machine Learning models
 * 🔐 Security threat detection
 * 📡 Distributed log monitoring
 * ☁️ Cloud-based log processing
 * 📊 Interactive dashboards using Power BI or Plotly
 * 🧠 Automated anomaly explanation using Generative AI
+* 📈 Advanced real-time analytics
 
 ---
 
@@ -335,6 +412,7 @@ Potential improvements for the project include:
 ## Vishnu Priyan S
 
 🎓 **B.Tech Information Technology**
+
 🏫 **V.S.B College of Engineering Technical Campus**
 
 Interested in:
@@ -343,10 +421,13 @@ Interested in:
 
 ---
 
-# 🎥 Demo
+# 🔗 Project Links
 
-🎬 **Project Demo:**
-https://vishnupriyan34.github.io/Demo-video---Infinite-/
+| Resource            | Link                                                     |
+| ------------------- | -------------------------------------------------------- |
+| 🌐 Live Application | https://log-file-anomaly-detector-v2s2.onrender.com/     |
+| 🎥 Demo Video       | https://vishnupriyan34.github.io/Demo-video---Infinite-/ |
+| 🐙 GitHub           | https://github.com/vishnupriyan34                        |
 
 ---
 
@@ -358,6 +439,17 @@ Feel free to use this project for learning and inspiration, but please give appr
 
 ---
 
-⭐ **If you found this project interesting, consider giving the repository a star!**
+# ⭐ Support
 
-🚀 **Thanks for visiting the Log File Anomaly Detector repository!**
+If you found this project interesting:
+
+⭐ **Star the repository**
+🍴 **Fork the repository**
+💻 **Explore the source code**
+🚀 **Try the live application**
+
+---
+
+## 🔍 Detect. Analyze. Visualize.
+
+> ### **Log File Anomaly Detector — Turning Raw Logs Into Actionable Insights.**
