@@ -1,0 +1,6 @@
+{
+  "name": "Log File Anomaly Detector",
+  "description": "AI-Powered Log Monitoring & Anomaly Detection platform with machine learning and rule-based cybersecurity threat detection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
