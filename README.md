@@ -348,16 +348,6 @@ This project can be useful for:
 
 ---
 
-# 🧪 Testing
-
-Unit tests are included for validating the core anomaly detection functionality.
-
-Run the tests using:
-
-```bash
-pytest
-```
-
 ---
 
 # 🚀 Deployment
